@@ -1,0 +1,2309 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/melissa/ontologies/2025/11/ONTOLOGIEFINAL"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/melissa/ontologies/2025/11/ONTOLOGIEFINAL">
+    <Prefix name="" IRI="http://www.semanticweb.org/melissa/ontologies/2025/11/ONTOLOGIEFINAL/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="fr">Ontologie OWL modélisant le système de santé algérien,</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <Literal>Melissa Ait Yahia et Lylia Moufouk</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="fr">Ontologie du Système de Santé Algérien</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <Literal>http://creativecommons.org/licenses/by/4.0/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="/CabinetMédical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Chirurgie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Clinique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Consultation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Diagnostic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/DossierMédical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/DossierPatient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Examen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ExamenBiologique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ExamenClinique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Hôpital"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Imagerie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Infirmier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Maladie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MaladieCardiaque"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MaladieGastro-Eritérale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MaladieInfectieuse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MaladieNeurologique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MaladieSystemique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Médecin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MédecinGénéraliste"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/MédecinSpécialiste"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Médicament"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Ordonnance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Pathologie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PatientAmbulant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/PatientHospitalisé"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Personne"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Pharmacie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Pharmacien"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ProcédureMédicale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ProfessionnelSanté"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/RendezVous"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/RésultatExamen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Thérapie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Traitement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/traitementPhysique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/ÉtablissementSanté"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Appartient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#avoir"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/aPourMédecin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/aPourTraitement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/aÉtéÉtabliePar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/concerne"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/concerneRendezVous"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/diagnostique"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/délivre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/effectue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/emploie"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/estDiagnostiquéePar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/estDélivréPar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/estEffectuéeSur"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/estHospitaliséDans"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/estPlanifiéPar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/estPrescritPar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/estRéaliséePar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/génèreRésultat"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/héberge"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/participeÀ"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/planifie"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/prescrit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/provientDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/soigne"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/souffreDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/subit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/traite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/travailleDans"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/Établie"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/adresse"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/adresseEtablissement"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/agentPathogène"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/capacitéLits"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/codeICD10"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dateAdmission"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dateCréation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dateRendezvous"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/dose"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/durée"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/duréeSéjour"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/email"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/forme"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/fréquenceCardiaque"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/heure"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/heureRendezvous"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/idPro"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/interprétation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/modeTransmission"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/motifConsultation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/niveauGravité"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/nom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/nomCommercial"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/nomEtablissementSanté"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/numAutorisation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/numDossier"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/numOrdonnance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/pressionArtérielle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/prix"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/propriétaire"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/prénom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/résultat"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/sexe"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/statut"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/symptômes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/typeEtablissement"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/typeProcédure"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/valeur"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/âge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Alzheimer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Appendicectomie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/BilanVital"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/CabinetDrKamel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/CliniqueElAmel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Consultation001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/DP001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Dr_Ali"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Dr_Hakim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/HôpitalMustapha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/IRM"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Inf_Sara"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/InsuffisanceCardiaque"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Kinésithérapie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Lupus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Ord001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Paludisme"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Paracétamol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Patient01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Patient02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Pharm_Mohamed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/PharmacieElYasmine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Psychothérapie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/RDV001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Res001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/TestSanguin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/Ulcère"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="/CabinetMédical"/>
+        <Class IRI="/ÉtablissementSanté"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Chirurgie"/>
+        <Class IRI="/Traitement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Clinique"/>
+        <Class IRI="/ÉtablissementSanté"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Consultation"/>
+        <Class IRI="/Diagnostic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Diagnostic"/>
+        <Class IRI="/ProcédureMédicale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/DossierPatient"/>
+        <Class IRI="/DossierMédical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Examen"/>
+        <Class IRI="/Diagnostic"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ExamenBiologique"/>
+        <Class IRI="/Examen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ExamenClinique"/>
+        <Class IRI="/Examen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Hôpital"/>
+        <Class IRI="/ÉtablissementSanté"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Imagerie"/>
+        <Class IRI="/Examen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Infirmier"/>
+        <Class IRI="/ProfessionnelSanté"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Maladie"/>
+        <Class IRI="/Pathologie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MaladieCardiaque"/>
+        <Class IRI="/Maladie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MaladieGastro-Eritérale"/>
+        <Class IRI="/Maladie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MaladieInfectieuse"/>
+        <Class IRI="/Maladie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MaladieNeurologique"/>
+        <Class IRI="/Maladie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MaladieSystemique"/>
+        <Class IRI="/Maladie"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Médecin"/>
+        <Class IRI="/ProfessionnelSanté"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Médecin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/diagnostique"/>
+            <Class IRI="/Pathologie"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Médecin"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/prescrit"/>
+            <Class IRI="/Traitement"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MédecinGénéraliste"/>
+        <Class IRI="/Médecin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/MédecinSpécialiste"/>
+        <Class IRI="/Médecin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Médicament"/>
+        <Class IRI="/Traitement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Médicament"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/estDélivréPar"/>
+            <Class IRI="/Pharmacien"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Ordonnance"/>
+        <Class IRI="/DossierMédical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Ordonnance"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/aÉtéÉtabliePar"/>
+            <Class IRI="/Médecin"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Patient"/>
+        <Class IRI="/Personne"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PatientAmbulant"/>
+        <Class IRI="/Patient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PatientAmbulant"/>
+        <ObjectComplementOf>
+            <Class IRI="/PatientHospitalisé"/>
+        </ObjectComplementOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PatientHospitalisé"/>
+        <Class IRI="/Patient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PatientHospitalisé"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/estHospitaliséDans"/>
+            <Class IRI="/Hôpital"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/PatientHospitalisé"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/estHospitaliséDans"/>
+            <Class IRI="/Hôpital"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Pharmacie"/>
+        <Class IRI="/ÉtablissementSanté"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Pharmacien"/>
+        <Class IRI="/ProfessionnelSanté"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Pharmacien"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/délivre"/>
+            <Class IRI="/Médicament"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ProfessionnelSanté"/>
+        <Class IRI="/Personne"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/ProfessionnelSanté"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/travailleDans"/>
+            <Class IRI="/ÉtablissementSanté"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/RendezVous"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/concerneRendezVous"/>
+            <Class IRI="/Patient"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/RendezVous"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/estPlanifiéPar"/>
+            <Class IRI="/ÉtablissementSanté"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/RésultatExamen"/>
+        <Class IRI="/DossierMédical"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/RésultatExamen"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/provientDe"/>
+            <Class IRI="/Examen"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Thérapie"/>
+        <Class IRI="/Traitement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Traitement"/>
+        <Class IRI="/ProcédureMédicale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Traitement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="/estPrescritPar"/>
+            <Class IRI="/Médecin"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/traitementPhysique"/>
+        <Class IRI="/Traitement"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="/CabinetMédical"/>
+        <Class IRI="/Clinique"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/CabinetMédical"/>
+        <Class IRI="/Hôpital"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/CabinetMédical"/>
+        <Class IRI="/Pharmacie"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Clinique"/>
+        <Class IRI="/Hôpital"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Clinique"/>
+        <Class IRI="/Pharmacie"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/DossierMédical"/>
+        <Class IRI="/Pathologie"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/DossierMédical"/>
+        <Class IRI="/Personne"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/DossierMédical"/>
+        <Class IRI="/ProcédureMédicale"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/DossierMédical"/>
+        <Class IRI="/RendezVous"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/DossierMédical"/>
+        <Class IRI="/ÉtablissementSanté"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/DossierPatient"/>
+        <Class IRI="/Ordonnance"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/DossierPatient"/>
+        <Class IRI="/RésultatExamen"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Hôpital"/>
+        <Class IRI="/Pharmacie"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Infirmier"/>
+        <Class IRI="/Médecin"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Infirmier"/>
+        <Class IRI="/Pharmacien"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Médecin"/>
+        <Class IRI="/Pharmacien"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Ordonnance"/>
+        <Class IRI="/RésultatExamen"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Pathologie"/>
+        <Class IRI="/Personne"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Pathologie"/>
+        <Class IRI="/ProcédureMédicale"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Pathologie"/>
+        <Class IRI="/RendezVous"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Pathologie"/>
+        <Class IRI="/ÉtablissementSanté"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/PatientAmbulant"/>
+        <Class IRI="/PatientHospitalisé"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Personne"/>
+        <Class IRI="/ProcédureMédicale"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Personne"/>
+        <Class IRI="/RendezVous"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Personne"/>
+        <Class IRI="/ÉtablissementSanté"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/ProcédureMédicale"/>
+        <Class IRI="/RendezVous"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/ProcédureMédicale"/>
+        <Class IRI="/ÉtablissementSanté"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/RendezVous"/>
+        <Class IRI="/ÉtablissementSanté"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="/MaladieNeurologique"/>
+        <NamedIndividual IRI="/Alzheimer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Chirurgie"/>
+        <NamedIndividual IRI="/Appendicectomie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/ExamenClinique"/>
+        <NamedIndividual IRI="/BilanVital"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/CabinetMédical"/>
+        <NamedIndividual IRI="/CabinetDrKamel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Clinique"/>
+        <NamedIndividual IRI="/CliniqueElAmel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Consultation"/>
+        <NamedIndividual IRI="/Consultation001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/DossierPatient"/>
+        <NamedIndividual IRI="/DP001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/MédecinGénéraliste"/>
+        <NamedIndividual IRI="/Dr_Ali"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/MédecinSpécialiste"/>
+        <NamedIndividual IRI="/Dr_Hakim"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Hôpital"/>
+        <NamedIndividual IRI="/HôpitalMustapha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Imagerie"/>
+        <NamedIndividual IRI="/IRM"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Infirmier"/>
+        <NamedIndividual IRI="/Inf_Sara"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/MaladieCardiaque"/>
+        <NamedIndividual IRI="/InsuffisanceCardiaque"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/traitementPhysique"/>
+        <NamedIndividual IRI="/Kinésithérapie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/MaladieSystemique"/>
+        <NamedIndividual IRI="/Lupus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Ordonnance"/>
+        <NamedIndividual IRI="/Ord001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/MaladieInfectieuse"/>
+        <NamedIndividual IRI="/Paludisme"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Médicament"/>
+        <NamedIndividual IRI="/Paracétamol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PatientHospitalisé"/>
+        <NamedIndividual IRI="/Patient01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/PatientAmbulant"/>
+        <NamedIndividual IRI="/Patient02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Pharmacien"/>
+        <NamedIndividual IRI="/Pharm_Mohamed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Pharmacie"/>
+        <NamedIndividual IRI="/PharmacieElYasmine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Thérapie"/>
+        <NamedIndividual IRI="/Psychothérapie"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/RendezVous"/>
+        <NamedIndividual IRI="/RDV001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/RésultatExamen"/>
+        <NamedIndividual IRI="/Res001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/ExamenBiologique"/>
+        <NamedIndividual IRI="/TestSanguin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/MaladieGastro-Eritérale"/>
+        <NamedIndividual IRI="/Ulcère"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Appartient"/>
+        <NamedIndividual IRI="/DP001"/>
+        <NamedIndividual IRI="/Patient01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/soigne"/>
+        <NamedIndividual IRI="/Dr_Ali"/>
+        <NamedIndividual IRI="/Patient02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/travailleDans"/>
+        <NamedIndividual IRI="/Dr_Ali"/>
+        <NamedIndividual IRI="/HôpitalMustapha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/soigne"/>
+        <NamedIndividual IRI="/Dr_Hakim"/>
+        <NamedIndividual IRI="/Patient01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/travailleDans"/>
+        <NamedIndividual IRI="/Dr_Hakim"/>
+        <NamedIndividual IRI="/HôpitalMustapha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/travailleDans"/>
+        <NamedIndividual IRI="/Inf_Sara"/>
+        <NamedIndividual IRI="/PharmacieElYasmine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/aÉtéÉtabliePar"/>
+        <NamedIndividual IRI="/Ord001"/>
+        <NamedIndividual IRI="/Dr_Hakim"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/estHospitaliséDans"/>
+        <NamedIndividual IRI="/Patient01"/>
+        <NamedIndividual IRI="/HôpitalMustapha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/souffreDe"/>
+        <NamedIndividual IRI="/Patient01"/>
+        <NamedIndividual IRI="/Lupus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/souffreDe"/>
+        <NamedIndividual IRI="/Patient02"/>
+        <NamedIndividual IRI="/Alzheimer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/délivre"/>
+        <NamedIndividual IRI="/Pharm_Mohamed"/>
+        <NamedIndividual IRI="/Paracétamol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/provientDe"/>
+        <NamedIndividual IRI="/Res001"/>
+        <NamedIndividual IRI="/TestSanguin"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/codeICD10"/>
+        <NamedIndividual IRI="/Alzheimer"/>
+        <Literal>G30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/niveauGravité"/>
+        <NamedIndividual IRI="/Alzheimer"/>
+        <Literal>Grave</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/symptômes"/>
+        <NamedIndividual IRI="/Alzheimer"/>
+        <Literal>Troubles de mémoire, désorientation</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/durée"/>
+        <NamedIndividual IRI="/Appendicectomie"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeProcédure"/>
+        <NamedIndividual IRI="/Appendicectomie"/>
+        <Literal>Ablation de l&apos;appendice</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/date"/>
+        <NamedIndividual IRI="/BilanVital"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2025-04-08</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/résultat"/>
+        <NamedIndividual IRI="/BilanVital"/>
+        <Literal>Constantes normales</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeProcédure"/>
+        <NamedIndividual IRI="/BilanVital"/>
+        <Literal>Mesure des paramètres vitaux</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/adresseEtablissement"/>
+        <NamedIndividual IRI="/CabinetDrKamel"/>
+        <Literal>Résidence AADL, Bâtiment C, Bab Ezzouar, Alger</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/nomEtablissementSanté"/>
+        <NamedIndividual IRI="/CabinetDrKamel"/>
+        <Literal>Cabinet Dr Kamel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/propriétaire"/>
+        <NamedIndividual IRI="/CabinetDrKamel"/>
+        <Literal>Dr. Kamel Bensalem</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeEtablissement"/>
+        <NamedIndividual IRI="/CabinetDrKamel"/>
+        <Literal>Privé</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/adresseEtablissement"/>
+        <NamedIndividual IRI="/CliniqueElAmel"/>
+        <Literal>Chemin Mackley, Hydra, Alger</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/nomEtablissementSanté"/>
+        <NamedIndividual IRI="/CliniqueElAmel"/>
+        <Literal>Clinique El Amel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/propriétaire"/>
+        <NamedIndividual IRI="/CliniqueElAmel"/>
+        <Literal>Groupe Santé El Ame</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeEtablissement"/>
+        <NamedIndividual IRI="/CliniqueElAmel"/>
+        <Literal>Privé</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/date"/>
+        <NamedIndividual IRI="/Consultation001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2025-04-08</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/heure"/>
+        <NamedIndividual IRI="/Consultation001"/>
+        <Literal>09:30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/motifConsultation"/>
+        <NamedIndividual IRI="/Consultation001"/>
+        <Literal>Douleur thoracique persistante</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/résultat"/>
+        <NamedIndividual IRI="/Consultation001"/>
+        <Literal>Orientation vers cardiologue recommandée</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/type"/>
+        <NamedIndividual IRI="/Consultation001"/>
+        <Literal>Consultation de médecine générale</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dateCréation"/>
+        <NamedIndividual IRI="/DP001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2025-03-10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/numDossier"/>
+        <NamedIndividual IRI="/DP001"/>
+        <Literal>DM-001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/email"/>
+        <NamedIndividual IRI="/Dr_Ali"/>
+        <Literal>dr.ali@chu-alger.dz&quot;</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/idPro"/>
+        <NamedIndividual IRI="/Dr_Ali"/>
+        <Literal>MG-001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/nom"/>
+        <NamedIndividual IRI="/Dr_Ali"/>
+        <Literal>Ali</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/prénom"/>
+        <NamedIndividual IRI="/Dr_Ali"/>
+        <Literal>Amine</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/sexe"/>
+        <NamedIndividual IRI="/Dr_Ali"/>
+        <Literal>Homme</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/âge"/>
+        <NamedIndividual IRI="/Dr_Ali"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">29</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/email"/>
+        <NamedIndividual IRI="/Dr_Hakim"/>
+        <Literal>dr.hakim@clinique-elamel.dz</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/idPro"/>
+        <NamedIndividual IRI="/Dr_Hakim"/>
+        <Literal>MS-001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/nom"/>
+        <NamedIndividual IRI="/Dr_Hakim"/>
+        <Literal>Hakim</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/prénom"/>
+        <NamedIndividual IRI="/Dr_Hakim"/>
+        <Literal>Samir</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/sexe"/>
+        <NamedIndividual IRI="/Dr_Hakim"/>
+        <Literal>Homme</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/âge"/>
+        <NamedIndividual IRI="/Dr_Hakim"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">48</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/adresseEtablissement"/>
+        <NamedIndividual IRI="/HôpitalMustapha"/>
+        <Literal>Place du 1er Mai, Sidi M&apos;hamed, Alger-Centre</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/capacitéLits"/>
+        <NamedIndividual IRI="/HôpitalMustapha"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">850</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/nomEtablissementSanté"/>
+        <NamedIndividual IRI="/HôpitalMustapha"/>
+        <Literal>CHU Mustapha Pacha</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeEtablissement"/>
+        <NamedIndividual IRI="/HôpitalMustapha"/>
+        <Literal>Public universitaire</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/date"/>
+        <NamedIndividual IRI="/IRM"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2025-04-15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/résultat"/>
+        <NamedIndividual IRI="/IRM"/>
+        <Literal>Anomalies corticales détectées</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeProcédure"/>
+        <NamedIndividual IRI="/IRM"/>
+        <Literal>IRM encéphalique avec injection de gadolinium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/idPro"/>
+        <NamedIndividual IRI="/Inf_Sara"/>
+        <Literal>INF-014</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/nom"/>
+        <NamedIndividual IRI="/Inf_Sara"/>
+        <Literal>Sara</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/prénom"/>
+        <NamedIndividual IRI="/Inf_Sara"/>
+        <Literal>Lamia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/sexe"/>
+        <NamedIndividual IRI="/Inf_Sara"/>
+        <Literal>Femme</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/âge"/>
+        <NamedIndividual IRI="/Inf_Sara"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/codeICD10"/>
+        <NamedIndividual IRI="/InsuffisanceCardiaque"/>
+        <Literal>I50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/fréquenceCardiaque"/>
+        <NamedIndividual IRI="/InsuffisanceCardiaque"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/niveauGravité"/>
+        <NamedIndividual IRI="/InsuffisanceCardiaque"/>
+        <Literal>Grave</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/pressionArtérielle"/>
+        <NamedIndividual IRI="/InsuffisanceCardiaque"/>
+        <Literal>100/60 mmHg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/durée"/>
+        <NamedIndividual IRI="/Kinésithérapie"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeProcédure"/>
+        <NamedIndividual IRI="/Kinésithérapie"/>
+        <Literal>Kinésithérapie</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/codeICD10"/>
+        <NamedIndividual IRI="/Lupus"/>
+        <Literal>M32</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/niveauGravité"/>
+        <NamedIndividual IRI="/Lupus"/>
+        <Literal>Grave</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/symptômes"/>
+        <NamedIndividual IRI="/Lupus"/>
+        <Literal>Fatigue, douleurs articulaires</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dateCréation"/>
+        <NamedIndividual IRI="/Ord001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2025-04-09</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/numOrdonnance"/>
+        <NamedIndividual IRI="/Ord001"/>
+        <Literal>ORD-2025-001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/agentPathogène"/>
+        <NamedIndividual IRI="/Paludisme"/>
+        <Literal>Plasmodium falciparum</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/codeICD10"/>
+        <NamedIndividual IRI="/Paludisme"/>
+        <Literal>B50</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/modeTransmission"/>
+        <NamedIndividual IRI="/Paludisme"/>
+        <Literal>Vecteur (moustique)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/niveauGravité"/>
+        <NamedIndividual IRI="/Paludisme"/>
+        <Literal>Grave</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/symptômes"/>
+        <NamedIndividual IRI="/Paludisme"/>
+        <Literal>Fièvre, frissons, anémie</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dose"/>
+        <NamedIndividual IRI="/Paracétamol"/>
+        <Literal>500 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/durée"/>
+        <NamedIndividual IRI="/Paracétamol"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/forme"/>
+        <NamedIndividual IRI="/Paracétamol"/>
+        <Literal>Comprimé</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/nomCommercial"/>
+        <NamedIndividual IRI="/Paracétamol"/>
+        <Literal>Paracétamol</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/prix"/>
+        <NamedIndividual IRI="/Paracétamol"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">200.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/adresse"/>
+        <NamedIndividual IRI="/Patient01"/>
+        <Literal>Alger, Bab Ezzouar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dateAdmission"/>
+        <NamedIndividual IRI="/Patient01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2025-03-20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/duréeSéjour"/>
+        <NamedIndividual IRI="/Patient01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/nom"/>
+        <NamedIndividual IRI="/Patient01"/>
+        <Literal>Saidi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/prénom"/>
+        <NamedIndividual IRI="/Patient01"/>
+        <Literal>Nadia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/sexe"/>
+        <NamedIndividual IRI="/Patient01"/>
+        <Literal>Femme</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/âge"/>
+        <NamedIndividual IRI="/Patient01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">58</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/adresse"/>
+        <NamedIndividual IRI="/Patient02"/>
+        <Literal>Alger,Bab Ezzouar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/nom"/>
+        <NamedIndividual IRI="/Patient02"/>
+        <Literal>Djebar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/prénom"/>
+        <NamedIndividual IRI="/Patient02"/>
+        <Literal>Nadia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/sexe"/>
+        <NamedIndividual IRI="/Patient02"/>
+        <Literal>Homme</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/âge"/>
+        <NamedIndividual IRI="/Patient02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">29</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/idPro"/>
+        <NamedIndividual IRI="/Pharm_Mohamed"/>
+        <Literal>PH-001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/nom"/>
+        <NamedIndividual IRI="/Pharm_Mohamed"/>
+        <Literal>Mohamed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/numAutorisation"/>
+        <NamedIndividual IRI="/Pharm_Mohamed"/>
+        <Literal>PH-0025</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/prénom"/>
+        <NamedIndividual IRI="/Pharm_Mohamed"/>
+        <Literal>Karim</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/sexe"/>
+        <NamedIndividual IRI="/Pharm_Mohamed"/>
+        <Literal>Homme</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/âge"/>
+        <NamedIndividual IRI="/Pharm_Mohamed"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">40</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/adresseEtablissement"/>
+        <NamedIndividual IRI="/PharmacieElYasmine"/>
+        <Literal>Rue des Frères Bouadou, Bir Mourad Raïs, Alge</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/nomEtablissementSanté"/>
+        <NamedIndividual IRI="/PharmacieElYasmine"/>
+        <Literal>Pharmacie El Yasmine</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/propriétaire"/>
+        <NamedIndividual IRI="/PharmacieElYasmine"/>
+        <Literal>Dr. Mohamed Karim</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeEtablissement"/>
+        <NamedIndividual IRI="/PharmacieElYasmine"/>
+        <Literal>Privé</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/durée"/>
+        <NamedIndividual IRI="/Psychothérapie"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">90</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeProcédure"/>
+        <NamedIndividual IRI="/Psychothérapie"/>
+        <Literal>Thérapie cognitivo-comportementale (TCC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dateRendezvous"/>
+        <NamedIndividual IRI="/RDV001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2025-04-08</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/heureRendezvous"/>
+        <NamedIndividual IRI="/RDV001"/>
+        <Literal>09:30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/statut"/>
+        <NamedIndividual IRI="/RDV001"/>
+        <Literal>Confirmé</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/dateCréation"/>
+        <NamedIndividual IRI="/Res001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2025-04-10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/interprétation"/>
+        <NamedIndividual IRI="/Res001"/>
+        <Literal>Hyperglycémie légère - ajustement du traitement antidiabétique nécessaire</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/valeur"/>
+        <NamedIndividual IRI="/Res001"/>
+        <Literal>Taux de glucose : 1.5 g/L (8.3 mmol/L)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/date"/>
+        <NamedIndividual IRI="/TestSanguin"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2025-04-10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/résultat"/>
+        <NamedIndividual IRI="/TestSanguin"/>
+        <Literal>Hémoglobine basse</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeProcédure"/>
+        <NamedIndividual IRI="/TestSanguin"/>
+        <Literal>Hémogramme complet (NFS)</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/codeICD10"/>
+        <NamedIndividual IRI="/Ulcère"/>
+        <Literal>K25</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/niveauGravité"/>
+        <NamedIndividual IRI="/Ulcère"/>
+        <Literal>Modéré</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/symptômes"/>
+        <NamedIndividual IRI="/Ulcère"/>
+        <Literal>Douleurs abdominales, nausées</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Appartient"/>
+        <ObjectProperty IRI="#avoir"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/aPourMédecin"/>
+        <ObjectProperty IRI="/soigne"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/aPourTraitement"/>
+        <ObjectProperty IRI="/traite"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/aÉtéÉtabliePar"/>
+        <ObjectProperty IRI="/Établie"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/concerne"/>
+        <ObjectProperty IRI="/souffreDe"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/concerneRendezVous"/>
+        <ObjectProperty IRI="/participeÀ"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/diagnostique"/>
+        <ObjectProperty IRI="/estDiagnostiquéePar"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/délivre"/>
+        <ObjectProperty IRI="/estDélivréPar"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/effectue"/>
+        <ObjectProperty IRI="/estRéaliséePar"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/emploie"/>
+        <ObjectProperty IRI="/travailleDans"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/estEffectuéeSur"/>
+        <ObjectProperty IRI="/subit"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/estHospitaliséDans"/>
+        <ObjectProperty IRI="/héberge"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/estPlanifiéPar"/>
+        <ObjectProperty IRI="/planifie"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/estPrescritPar"/>
+        <ObjectProperty IRI="/prescrit"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Appartient"/>
+        <Class IRI="/DossierMédical"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#avoir"/>
+        <Class IRI="/Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/aPourMédecin"/>
+        <Class IRI="/Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/aPourTraitement"/>
+        <Class IRI="/Pathologie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/aÉtéÉtabliePar"/>
+        <Class IRI="/Ordonnance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/concerne"/>
+        <Class IRI="/Pathologie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/concerneRendezVous"/>
+        <Class IRI="/RendezVous"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/diagnostique"/>
+        <Class IRI="/Médecin"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/délivre"/>
+        <Class IRI="/Pharmacien"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/effectue"/>
+        <Class IRI="/ProfessionnelSanté"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/emploie"/>
+        <Class IRI="/ÉtablissementSanté"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/estDiagnostiquéePar"/>
+        <Class IRI="/Pathologie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/estDélivréPar"/>
+        <Class IRI="/Médicament"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/estEffectuéeSur"/>
+        <Class IRI="/ProcédureMédicale"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/estHospitaliséDans"/>
+        <Class IRI="/PatientHospitalisé"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/estPlanifiéPar"/>
+        <Class IRI="/RendezVous"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/estPrescritPar"/>
+        <Class IRI="/Traitement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/estRéaliséePar"/>
+        <Class IRI="/ProcédureMédicale"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/génèreRésultat"/>
+        <Class IRI="/Examen"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/héberge"/>
+        <Class IRI="/ÉtablissementSanté"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/participeÀ"/>
+        <Class IRI="/Personne"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/planifie"/>
+        <Class IRI="/ÉtablissementSanté"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/prescrit"/>
+        <Class IRI="/Médecin"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/provientDe"/>
+        <Class IRI="/RésultatExamen"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/soigne"/>
+        <Class IRI="/Médecin"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/souffreDe"/>
+        <Class IRI="/Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/subit"/>
+        <Class IRI="/Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/traite"/>
+        <Class IRI="/Traitement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/travailleDans"/>
+        <Class IRI="/ProfessionnelSanté"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/Établie"/>
+        <Class IRI="/Médecin"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Appartient"/>
+        <Class IRI="/Patient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#avoir"/>
+        <Class IRI="/DossierMédical"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/aPourMédecin"/>
+        <Class IRI="/Médecin"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/aPourTraitement"/>
+        <Class IRI="/Traitement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/aÉtéÉtabliePar"/>
+        <Class IRI="/Médecin"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/concerne"/>
+        <Class IRI="/Patient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/concerneRendezVous"/>
+        <Class IRI="/Personne"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/diagnostique"/>
+        <Class IRI="/Pathologie"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/délivre"/>
+        <Class IRI="/Médicament"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/effectue"/>
+        <Class IRI="/ProcédureMédicale"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/emploie"/>
+        <Class IRI="/ProfessionnelSanté"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/estDiagnostiquéePar"/>
+        <Class IRI="/Médecin"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/estDélivréPar"/>
+        <Class IRI="/Pharmacien"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/estEffectuéeSur"/>
+        <Class IRI="/Patient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/estHospitaliséDans"/>
+        <Class IRI="/ÉtablissementSanté"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/estPlanifiéPar"/>
+        <Class IRI="/ÉtablissementSanté"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/estPrescritPar"/>
+        <Class IRI="/Médecin"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/estRéaliséePar"/>
+        <Class IRI="/ProfessionnelSanté"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/génèreRésultat"/>
+        <Class IRI="/RésultatExamen"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/héberge"/>
+        <Class IRI="/Patient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/participeÀ"/>
+        <Class IRI="/RendezVous"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/planifie"/>
+        <Class IRI="/RendezVous"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/prescrit"/>
+        <Class IRI="/Traitement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/provientDe"/>
+        <Class IRI="/Examen"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/soigne"/>
+        <Class IRI="/Patient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/souffreDe"/>
+        <Class IRI="/Pathologie"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/subit"/>
+        <Class IRI="/ProcédureMédicale"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/traite"/>
+        <Class IRI="/Pathologie"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/travailleDans"/>
+        <Class IRI="/ÉtablissementSanté"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/Établie"/>
+        <Class IRI="/Ordonnance"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="/adresse"/>
+        <Class IRI="/Personne"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/adresseEtablissement"/>
+        <Class IRI="/ÉtablissementSanté"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/agentPathogène"/>
+        <Class IRI="/MaladieInfectieuse"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/capacitéLits"/>
+        <Class IRI="/Hôpital"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/codeICD10"/>
+        <Class IRI="/Maladie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/codeICD10"/>
+        <Class IRI="/Pathologie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/date"/>
+        <Class IRI="/ProcédureMédicale"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dateAdmission"/>
+        <Class IRI="/PatientHospitalisé"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dateCréation"/>
+        <Class IRI="/DossierMédical"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dateRendezvous"/>
+        <Class IRI="/RendezVous"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/dose"/>
+        <Class IRI="/Médicament"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/durée"/>
+        <Class IRI="/Traitement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/duréeSéjour"/>
+        <Class IRI="/PatientHospitalisé"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/email"/>
+        <Class IRI="/Médecin"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/forme"/>
+        <Class IRI="/Médicament"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/fréquenceCardiaque"/>
+        <Class IRI="/MaladieCardiaque"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/heure"/>
+        <Class IRI="/Consultation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/heureRendezvous"/>
+        <Class IRI="/RendezVous"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/idPro"/>
+        <Class IRI="/ProfessionnelSanté"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/interprétation"/>
+        <Class IRI="/RésultatExamen"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/modeTransmission"/>
+        <Class IRI="/MaladieInfectieuse"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/motifConsultation"/>
+        <Class IRI="/Consultation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/niveauGravité"/>
+        <Class IRI="/Pathologie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/nom"/>
+        <Class IRI="/Personne"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/nomCommercial"/>
+        <Class IRI="/Médicament"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/nomEtablissementSanté"/>
+        <Class IRI="/ÉtablissementSanté"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/numAutorisation"/>
+        <Class IRI="/Pharmacien"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/numDossier"/>
+        <Class IRI="/DossierPatient"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/numOrdonnance"/>
+        <Class IRI="/Ordonnance"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/pressionArtérielle"/>
+        <Class IRI="/MaladieCardiaque"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/prix"/>
+        <Class IRI="/Médicament"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/propriétaire"/>
+        <Class IRI="/ÉtablissementSanté"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/prénom"/>
+        <Class IRI="/Personne"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/résultat"/>
+        <Class IRI="/Diagnostic"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/sexe"/>
+        <Class IRI="/Personne"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/statut"/>
+        <Class IRI="/RendezVous"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/symptômes"/>
+        <Class IRI="/Maladie"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/type"/>
+        <Class IRI="/Consultation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/typeEtablissement"/>
+        <Class IRI="/ÉtablissementSanté"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/typeProcédure"/>
+        <Class IRI="/ProcédureMédicale"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/valeur"/>
+        <Class IRI="/RésultatExamen"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/âge"/>
+        <Class IRI="/Personne"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="/adresse"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/adresseEtablissement"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/agentPathogène"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/capacitéLits"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/codeICD10"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/date"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dateAdmission"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dateCréation"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dateRendezvous"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/dose"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/durée"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/duréeSéjour"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/email"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/forme"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/fréquenceCardiaque"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/heure"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/heureRendezvous"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/idPro"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/interprétation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/modeTransmission"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/motifConsultation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/niveauGravité"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/nom"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/nomCommercial"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/nomEtablissementSanté"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/numAutorisation"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/numDossier"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/numOrdonnance"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/pressionArtérielle"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/prix"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/propriétaire"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/prénom"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/résultat"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/sexe"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/statut"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/symptômes"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/typeEtablissement"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/typeProcédure"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/valeur"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/âge"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S4</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="/Patient"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="/Médecin"/>
+                <Variable IRI="/m1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="/Médecin"/>
+                <Variable IRI="/m2"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="/Maladie"/>
+                <Variable IRI="/mal"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/soigne"/>
+                <Variable IRI="/m1"/>
+                <Variable IRI="/p"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/soigne"/>
+                <Variable IRI="/m2"/>
+                <Variable IRI="/p"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/diagnostique"/>
+                <Variable IRI="/m1"/>
+                <Variable IRI="/mal"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/diagnostique"/>
+                <Variable IRI="/m2"/>
+                <Variable IRI="/mal"/>
+            </ObjectPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="/m1"/>
+                <Variable IRI="/m2"/>
+            </DifferentIndividualsAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="/adresse"/>
+                <Variable IRI="/p"/>
+                <Literal>Alerte: Diagnostic confirmé par deux médecins différents</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Conflit de statut patient contradictoire</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>s1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="/Patient"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="/PatientAmbulant"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="/PatientHospitalisé"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="/symptômes"/>
+                <Variable IRI="/p"/>
+                <Literal>Conflit: Patient à la fois ambulant et hospitalisé</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal>Conflit de rendez-vous en double</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="/Patient"/>
+                <Variable IRI="/p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="/RendezVous"/>
+                <Variable IRI="/rdv1"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="/RendezVous"/>
+                <Variable IRI="/rdv2"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/participeÀ"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/rdv1"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="/participeÀ"/>
+                <Variable IRI="/p"/>
+                <Variable IRI="/rdv2"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="/dateRendezvous"/>
+                <Variable IRI="/rdv1"/>
+                <Variable IRI="/d"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="/dateRendezvous"/>
+                <Variable IRI="/rdv2"/>
+                <Variable IRI="/d"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="/heureRendezvous"/>
+                <Variable IRI="/rdv1"/>
+                <Variable IRI="/h"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="/heureRendezvous"/>
+                <Variable IRI="/rdv2"/>
+                <Variable IRI="/h"/>
+            </DataPropertyAtom>
+            <DifferentIndividualsAtom>
+                <Variable IRI="/rdv1"/>
+                <Variable IRI="/rdv2"/>
+            </DifferentIndividualsAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="/statut"/>
+                <Variable IRI="/rdv1"/>
+                <Literal>Conflit: Rendez-vous en double</Literal>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Alzheimer</IRI>
+        <Literal xml:lang="fr">Maladie neurodégénérative progressive&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/InsuffisanceCardiaque</IRI>
+        <Literal xml:lang="fr">Défaillance du muscle cardiaque</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Kinésithérapie</IRI>
+        <Literal xml:lang="fr">Programme de rééducation physique visant à restaurer la mobilité musculaire et articulaire après chirurgie ou blessure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Lupus</IRI>
+        <Literal xml:lang="fr">Maladie auto-immune systémique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Paludisme</IRI>
+        <Literal xml:lang="fr">Infection parasitaire transmise par les moustiques</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/Ulcère</IRI>
+        <Literal xml:lang="fr">Lésion gastrique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>/prix</IRI>
+        <Literal>DA</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
